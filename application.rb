@@ -16,7 +16,7 @@ class Application < Sinatra::Base
     serve '/images', from: 'assets/images'
     serve '/js', from: 'assets/javascripts'
 
-    css :application, '/css/application.css', %w(/css/reset.css /css/index.css /css/modal.css /css/benefits.css /css/map.css)
+    css :application, '/css/application.css', %w(/css/reset.css /css/index.css /css/modal.css)
     js :application, '/js/application.js', %w( /js/jquery-1.9.1.js  /js/order.js /js/map.js)
 
     css_compression :sass
