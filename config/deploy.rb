@@ -1,8 +1,8 @@
 # Bundler tasks
 require 'bundler/capistrano'
 
-set :application, "courier"
-set :repository,  "git@github.com:Agatov/courier.git"
+set :application, "autoservice1"
+set :repository,  "git@github.com:Agatov/auroservice1.git"
 
 set :scm, :git
 
