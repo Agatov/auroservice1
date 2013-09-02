@@ -1,11 +1,9 @@
 %html
   %head
-    = css :application
-    = js :application
-    %script{src:'http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU'}
+    -#= css :application
+    -#= js :application
     %title
       Удаление вмятин от града без покраски
   %body
-    asdasdasd
-    -#= yield
-    -#= erb :metrika
+    = yield
+    = erb :metrika
