@@ -33,19 +33,19 @@ class Application < Sinatra::Base
 
     message = "#{params[:order][:username]}. #{params[:order][:phone]}"
 
-    #phones.each do |phone|
-    #  HTTParty.get(
-    #      'http://api.sms24x7.ru',
-    #      query: {
-    #          method: 'push_msg',
-    #          email: 'agatovs@gmail.com',
-    #          password: 'avv6rqE',
-    #          phone: phone.to_s,
-    #          text: message,
-    #          sender_name: 'courier'
-    #      }
-    #  )
-    #end
+    phones.each do |phone|
+      HTTParty.get(
+          'http://api.sms24x7.ru',
+          query: {
+              method: 'push_msg',
+              email: 'agatovs@gmail.com',
+              password: 'avv6rqE',
+              phone: phone.to_s,
+              text: message,
+              sender_name: 'bezvmyatin5'
+          }
+      )
+    end
 
     content_type :json
     {status: :success}.to_json

@@ -2,6 +2,21 @@ $ ->
 
   $('#order-button').bind 'click', ->
 
+
+    name = $(@).parent().find('input[name=username]')
+    if name.val().length < 2
+      name.css 'border', '1px solid red'
+      return false
+    else
+      name.css 'border', 'none'
+
+    phone = $(@).parent().find('input[name=phone]')
+    if phone.val().length < 7
+      phone.css 'border', '1px solid red'
+      return false
+    else
+      name.css 'border', 'none'
+
     $('.modal-overlay').bind 'click', ->
       hide_thank_you()
 

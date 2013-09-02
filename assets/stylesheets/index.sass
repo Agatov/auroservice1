@@ -80,38 +80,66 @@ body
       color: #666
 
 
-  .top-form
-    margin-top: 50px
-    float: left
-    width: 290px
-    //background: #fff
-    //box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
+  .middle-row
 
-
-    input
-      width: 290px
-      height: 40px
-      border: 1px solid #ccc
+    &:after
+      clear: both
+      content: "."
       display: block
-      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
-      font-size: 16px
-      padding: 0px 15px
-      margin-bottom: 25px
-      border-radius: 3px
+      height: 0
+      clear: both
+      visibility: hidden
 
-    .button
-      background: #FFD461
-      text-shadow: 0 1px 0 #999
-      width: 290px
-      height: 40px
-      line-height: 40px
-      color: #fff
-      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
-      font-size: 16px
+    .form-container
+      float: left
+
+      .top-form
+        margin-top: 50px
+        float: left
+        width: 290px
+        //background: #fff
+        //box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
+
+
+        input
+          width: 290px
+          height: 40px
+          border: 1px solid #ccc
+          display: block
+          font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+          font-size: 16px
+          padding: 0px 15px
+          margin-bottom: 25px
+          border-radius: 3px
+
+        .button
+          background: #FFD461
+          text-shadow: 0 1px 0 #999
+          width: 290px
+          height: 40px
+          line-height: 40px
+          color: #fff
+          font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+          font-size: 16px
+          text-align: center
+          -webkit-transition: all, 0.15s
+          border-radius: 3px
+          cursor: pointer
+
+          &:hover
+            background: #ffa767
+
+    .before-after
+      float: right
+      margin-top: 25px
+      background: #fff
+      border-radius: 10px
+      width: 280px
+      height: 235px
+      padding: 10px
       text-align: center
-      -webkit-transition: all, 0.15s
-      border-radius: 3px
-      cursor: pointer
 
-      &:hover
-        background: blue
+      .header
+        font-size: 18px
+        text-align: center
+        margin-bottom: 15px

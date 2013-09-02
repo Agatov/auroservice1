@@ -6,27 +6,36 @@
     .about
       10 лет опыта в Рязани. Американское оборудование Ultra Dent Tools.
 
-    .form-container
-      .top-form
-        %input{type: :text, name: 'username', placeholder: 'Введите ваше имя'}
-        %input{type: :text, name: 'phone', placeholder: 'Введите ваш номер телефона'}
-        .button#order-button
-          Получить скидку
 
-      .form-text
-        Оставьте заявку до
-        %br
-        %span.red 4 сентября
-        и получите специальную цену.
-        %br
-        %span.strike 1 000 рублей
-        %span.red 500 рублей
-        за один элемент.
+    .middle-row
+      .form-container
+        .top-form
+          %input{type: :text, name: 'username', placeholder: 'Введите ваше имя'}
+          %input{type: :text, name: 'phone', placeholder: 'Введите ваш номер телефона'}
+          .button#order-button
+            Получить скидку
+
+        .form-text
+          Оставьте заявку до
+          %br
+          %span.red 4 сентября
+          и получите специальную цену.
+          %br
+          %span.strike 1 000 рублей
+          %span.red 500 рублей
+          за один элемент.
+
+      .before-after
+        .header
+          До / После
+        %img{src: '/images/sample.jpg'}
 
     .phone
       8 900 90 80 111
       .small
         Ежедневно, с 9:00 до 21:00
+
+
 
 
 .modal-overlay
